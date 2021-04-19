@@ -1,6 +1,6 @@
 def readWrite():
-        datFile=open('D:\mbox.txt', 'r')
-        writeFile=open('D:\EmailFrom.txt', "w")
+        datFile=open('path', 'r')
+        writeFile=open('path', "w")
         for line in datFile:
 #            line=line.rstrip()
             if line.startswith('From:'):
