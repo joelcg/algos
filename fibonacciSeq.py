@@ -5,3 +5,11 @@ def getFibNumRec(pos):
 def getFibSeqRec(num):
   for num in range(num):
     print(getFibNumRec(num))
+    
+ def getFibNumIte(pos):
+  seq = [0,1]
+  cur = 2
+  while cur <= pos:
+    seq.append(seq[cur-1]+seq[cur-2])
+    cur += 1
+  return "Num = ",print(seq[pos]),". Seq= ",print(str(seq)[1:-1])
