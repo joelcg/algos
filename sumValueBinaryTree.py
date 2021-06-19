@@ -4,6 +4,6 @@ class Node:
         self.left = None
         self.right = None
 
-def sumValue(root):
-  if root == 0; return None
-  return root.data + sumValue(root.left) + sumValue(root.right)
+def sum(root):
+  if root == None: return 0
+  return root.data + sum(root.left) + sum(root.right)
